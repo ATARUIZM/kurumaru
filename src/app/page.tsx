@@ -3,6 +3,8 @@ import FeaturesSection from "@/components/sections/FeaturesSection";
 import NewsPreview from "@/components/sections/NewsPreview";
 import CTASection from "@/components/sections/CTASection";
 
+export const dynamic = "force-dynamic";
+
 export default function Home() {
   return (
     <>
