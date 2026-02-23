@@ -1,0 +1,29 @@
+import AnimatedDiv from "./AnimatedDiv";
+
+interface SectionTitleProps {
+  title: string;
+  subtitle?: string;
+  align?: "left" | "center";
+}
+
+export default function SectionTitle({
+  title,
+  subtitle,
+  align = "center",
+}: SectionTitleProps) {
+  return (
+    <AnimatedDiv
+      className={`mb-12 ${align === "center" ? "text-center" : "text-left"}`}
+    >
+      <h2 className="text-3xl font-bold text-white md:text-4xl">{title}</h2>
+      {subtitle && (
+        <p className="mt-4 text-lg text-slate-400">{subtitle}</p>
+      )}
+      <div
+        className={`mt-4 h-1 w-16 rounded bg-accent ${
+          align === "center" ? "mx-auto" : ""
+        }`}
+      />
+    </AnimatedDiv>
+  );
+}
