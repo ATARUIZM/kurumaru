@@ -1,29 +1,24 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
 
 export default function HeroSection() {
   return (
     <section className="relative flex min-h-[90vh] items-center overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-navy-950 via-navy-900 to-navy-950" />
+      {/* Background photo */}
+      <Image
+        src="/kurumaru-top.jpg"
+        alt="株式会社くるまる"
+        fill
+        className="object-cover"
+        priority
+      />
 
-      {/* Animated grid lines */}
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="h-full w-full"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(96,165,250,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(96,165,250,0.3) 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
-          }}
-        />
-      </div>
-
-      {/* Glowing orbs */}
-      <div className="absolute left-1/4 top-1/4 h-96 w-96 rounded-full bg-accent/5 blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 h-72 w-72 rounded-full bg-accent-dark/10 blur-3xl" />
+      {/* Site color overlay */}
+      <div className="absolute inset-0 bg-navy-950/70" />
+      <div className="absolute inset-0 bg-gradient-to-br from-navy-950/40 via-transparent to-navy-950/60" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -67,13 +62,9 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
-            className="flex flex-wrap gap-4"
           >
             <Button href="/contact" size="lg">
               お問い合わせ
-            </Button>
-            <Button href="/news" variant="outline" size="lg">
-              最新情報を見る
             </Button>
           </motion.div>
         </motion.div>

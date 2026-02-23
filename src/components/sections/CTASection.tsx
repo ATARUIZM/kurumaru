@@ -20,7 +20,7 @@ export default function CTASection() {
             <Button href="/contact" size="lg">
               お問い合わせ
             </Button>
-            <Button href="/company" variant="outline" size="lg">
+            <Button href="/about" variant="outline" size="lg">
               会社概要・アクセス
             </Button>
           </div>
