@@ -10,18 +10,18 @@ export default function CTASection() {
       <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
         <AnimatedDiv>
           <h2 className="mb-6 text-3xl font-bold text-white md:text-4xl">
-            一緒に未来を創りませんか？
+            お車のことなら何でもお気軽にご相談ください
           </h2>
           <p className="mx-auto mb-10 max-w-2xl text-lg text-slate-400">
-            プロジェクトのご相談や採用に関するお問い合わせなど、
-            お気軽にご連絡ください。
+            平塚市で自動車販売・保険・整備に関するご相談を承っております。
+            まずはお気軽にお問い合わせください。
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button href="/contact" size="lg">
               お問い合わせ
             </Button>
-            <Button href="/careers" variant="outline" size="lg">
-              採用情報
+            <Button href="/company" variant="outline" size="lg">
+              会社概要・アクセス
             </Button>
           </div>
         </AnimatedDiv>

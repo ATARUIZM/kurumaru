@@ -38,7 +38,7 @@ export default function HeroSection() {
             transition={{ delay: 0.2, duration: 0.6 }}
           >
             <span className="mb-6 inline-block rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-sm text-accent">
-              Innovation &amp; Technology
+              神奈川県平塚市の自動車販売店
             </span>
           </motion.div>
 
@@ -48,9 +48,9 @@ export default function HeroSection() {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="mb-6 text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl"
           >
-            テクノロジーで
+            お車のことなら
             <br />
-            <span className="text-accent">未来</span>を創造する
+            <span className="text-accent">くるまる</span>へ
           </motion.h1>
 
           <motion.p
@@ -59,8 +59,8 @@ export default function HeroSection() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="mb-10 max-w-2xl text-lg text-slate-400 sm:text-xl"
           >
-            最先端のテクノロジーとクリエイティブな発想で、
-            ビジネスの課題を解決し、新しい価値を生み出します。
+            神奈川県平塚市を拠点に、自動車の販売・保険・整備まで、
+            お車のことならなんでもお気軽にご相談ください。
           </motion.p>
 
           <motion.div
@@ -72,8 +72,8 @@ export default function HeroSection() {
             <Button href="/contact" size="lg">
               お問い合わせ
             </Button>
-            <Button href="/services" variant="outline" size="lg">
-              事業内容を見る
+            <Button href="/news" variant="outline" size="lg">
+              最新情報を見る
             </Button>
           </motion.div>
         </motion.div>

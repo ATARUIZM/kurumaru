@@ -6,42 +6,42 @@ const features = [
   {
     icon: (
       <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
       </svg>
     ),
-    title: "Webアプリケーション開発",
+    title: "自動車販売",
     description:
-      "React/Next.jsを中心としたモダンなWebアプリケーションを設計・開発。スケーラブルで保守性の高いシステムを構築します。",
+      "国産車・輸入車など幅広い車種をご用意。お客様のライフスタイルやご予算に合ったお車をご提案します。",
   },
   {
     icon: (
       <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
       </svg>
     ),
-    title: "AIソリューション",
+    title: "自動車保険",
     description:
-      "機械学習・自然言語処理を活用したAIソリューションで、業務効率化と意思決定の高速化を実現します。",
+      "万が一の事故にも備え、最適な保険プランをご提案。お客様に合った補償内容で安心のカーライフをサポートします。",
   },
   {
     icon: (
       <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065zM15 12a3 3 0 11-6 0 3 3 0 016 0z" />
       </svg>
     ),
-    title: "DXコンサルティング",
+    title: "車検・整備",
     description:
-      "デジタルトランスフォーメーション戦略の立案から実行まで、企業の変革を包括的にサポートします。",
+      "定期点検から車検まで、お車の安全を守ります。熟練スタッフが丁寧に点検・整備いたします。",
   },
   {
     icon: (
       <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
       </svg>
     ),
-    title: "クラウドインフラ構築",
+    title: "各種手続き代行",
     description:
-      "AWS/GCPを活用した堅牢なクラウドインフラの設計・構築・運用。セキュリティと可用性を両立します。",
+      "車の購入後の登録・名義変更など、面倒な手続きもすべてお任せください。スムーズにご対応いたします。",
   },
 ];
 
@@ -50,8 +50,8 @@ export default function FeaturesSection() {
     <section className="py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionTitle
-          title="事業内容"
-          subtitle="最先端のテクノロジーで、ビジネスの成長を加速させます"
+          title="サービス内容"
+          subtitle="お車に関するあらゆるご相談に対応いたします"
         />
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
