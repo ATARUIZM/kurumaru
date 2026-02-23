@@ -5,7 +5,7 @@ import ContactForm from "@/components/sections/ContactForm";
 
 export const metadata: Metadata = {
   title: "お問い合わせ",
-  description: "株式会社サンプルへのお問い合わせはこちらから。プロジェクトのご相談、お見積もりなど、お気軽にご連絡ください。",
+  description: "株式会社くるまるへのお問い合わせはこちらから。自動車の購入・保険・整備に関するご相談など、お気軽にご連絡ください。",
 };
 
 export default function ContactPage() {
