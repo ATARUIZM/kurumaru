@@ -9,8 +9,8 @@ import Badge from "@/components/ui/Badge";
 import Pagination from "@/components/ui/Pagination";
 
 export const metadata: Metadata = {
-  title: "ニュース",
-  description: "株式会社サンプルの最新ニュース、プレスリリース、お知らせをご覧いただけます。",
+  title: "お知らせ",
+  description: "株式会社サンプルの最新お知らせ、プレスリリース、お知らせをご覧いただけます。",
 };
 
 const ITEMS_PER_PAGE = 10;
@@ -51,8 +51,8 @@ export default async function NewsPage({
   return (
     <div className="py-24">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        <Breadcrumb items={[{ label: "ニュース" }]} />
-        <SectionTitle title="ニュース" subtitle="最新のお知らせ" />
+        <Breadcrumb items={[{ label: "お知らせ" }]} />
+        <SectionTitle title="お知らせ" subtitle="最新のお知らせ" />
 
         {/* Category filter */}
         <div className="mb-8 flex flex-wrap justify-center gap-2">
@@ -73,7 +73,7 @@ export default async function NewsPage({
 
         {news.length === 0 ? (
           <p className="text-center text-slate-400 py-12">
-            該当するニュースはありません。
+            該当するお知らせはありません。
           </p>
         ) : (
           <AnimatedDiv>

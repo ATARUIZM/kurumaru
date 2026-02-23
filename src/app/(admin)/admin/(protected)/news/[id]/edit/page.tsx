@@ -18,7 +18,7 @@ export default async function EditNewsPage({ params }: Props) {
   return (
     <div>
       <div className="mb-8">
-        <h1 className="text-2xl font-bold text-white">ニュース編集</h1>
+        <h1 className="text-2xl font-bold text-white">お知らせ編集</h1>
         <p className="mt-1 text-sm text-slate-400">{news.title}</p>
       </div>
       <ArticleForm

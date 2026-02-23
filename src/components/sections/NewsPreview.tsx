@@ -16,11 +16,11 @@ export default async function NewsPreview() {
   return (
     <section className="bg-navy-900/50 py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionTitle title="ニュース" subtitle="最新のお知らせ" />
+        <SectionTitle title="お知らせ" subtitle="最新のお知らせ" />
 
         {news.length === 0 ? (
           <p className="text-center text-slate-400">
-            ニュースはまだありません。
+            お知らせはまだありません。
           </p>
         ) : (
           <AnimatedDiv>
@@ -48,7 +48,7 @@ export default async function NewsPreview() {
 
         <div className="mt-10 text-center">
           <Button href="/news" variant="outline">
-            ニュース一覧へ
+            お知らせ一覧へ
           </Button>
         </div>
       </div>

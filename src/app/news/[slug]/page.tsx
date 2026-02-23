@@ -13,10 +13,10 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const news = await prisma.news.findUnique({ where: { slug } });
-  if (!news) return { title: "ニュースが見つかりません" };
+  if (!news) return { title: "お知らせが見つかりません" };
   return {
     title: news.title,
-    description: news.excerpt || `${news.title} - 株式会社サンプルのニュース`,
+    description: news.excerpt || `${news.title} - 株式会社サンプルのお知らせ`,
   };
 }
 
@@ -34,7 +34,7 @@ export default async function NewsDetailPage({ params }: Props) {
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <Breadcrumb
           items={[
-            { label: "ニュース", href: "/news" },
+            { label: "お知らせ", href: "/news" },
             { label: news.title },
           ]}
         />
@@ -62,7 +62,7 @@ export default async function NewsDetailPage({ params }: Props) {
 
         <div className="mt-16 border-t border-surface-border pt-8">
           <Button href="/news" variant="ghost">
-            ← ニュース一覧に戻る
+            ← お知らせ一覧に戻る
           </Button>
         </div>
       </div>

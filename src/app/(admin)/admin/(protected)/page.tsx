@@ -14,7 +14,7 @@ export default async function AdminDashboard() {
 
   const stats = [
     {
-      label: "公開中のニュース",
+      label: "公開中のお知らせ",
       value: newsCount,
       icon: (
         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -75,7 +75,7 @@ export default async function AdminDashboard() {
       </div>
 
       <div className="flex gap-4">
-        <Button href="/admin/news/new">ニュースを作成</Button>
+        <Button href="/admin/news/new">お知らせを作成</Button>
         <Button href="/admin/blog/new" variant="secondary">
           ブログを作成
         </Button>

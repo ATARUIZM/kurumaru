@@ -17,7 +17,7 @@ export default async function AdminNewsPage() {
     <div>
       <div className="mb-8 flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-white">ニュース管理</h1>
+          <h1 className="text-2xl font-bold text-white">お知らせ管理</h1>
           <p className="mt-1 text-sm text-slate-400">
             {news.length}件の記事
           </p>
@@ -27,7 +27,7 @@ export default async function AdminNewsPage() {
 
       {news.length === 0 ? (
         <Card className="py-12 text-center">
-          <p className="text-slate-400">ニュース記事はまだありません。</p>
+          <p className="text-slate-400">お知らせ記事はまだありません。</p>
           <Button href="/admin/news/new" className="mt-4">
             最初の記事を作成
           </Button>
