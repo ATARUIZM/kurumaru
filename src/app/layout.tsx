@@ -12,11 +12,11 @@ const notoSansJP = Noto_Sans_JP({
 
 export const metadata: Metadata = {
   title: {
-    default: "株式会社サンプル | テクノロジーで未来を創造する",
-    template: "%s | 株式会社サンプル",
+    default: "株式会社くるまる",
+    template: "%s | 株式会社くるまる",
   },
   description:
-    "テクノロジーで未来を創造する。株式会社サンプルの公式コーポレートサイトです。",
+    "平塚市で自動車販売・保険・整備に関するご相談を承っております。まずはお気軽にお問い合わせください。",
 };
 
 export default function RootLayout({
