@@ -63,7 +63,9 @@ export default function AboutPage() {
           <SectionTitle title="アクセス" />
           <AnimatedDiv className="mx-auto max-w-3xl">
             <Card>
-              <p className="mb-4 text-slate-400">{siteConfig.address}</p>
+              <p className="mb-4 text-slate-400">
+                {address[0]}<br />{address[1]}
+              </p>
               <div className="aspect-video w-full overflow-hidden rounded-lg">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26030.596821697054!2d139.3149754549561!3d35.359998958090095!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019ac7e243467ad%3A0xe908c710724df0cf!2z77yI5qCq77yJ44GP44KL44G-44KL!5e0!3m2!1sja!2sjp!4v1771896286382!5m2!1sja!2sjp"
