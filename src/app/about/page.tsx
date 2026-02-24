@@ -54,7 +54,7 @@ export default function AboutPage() {
               <p className="mb-4 text-slate-400">{siteConfig.address}</p>
               <div className="aspect-video w-full overflow-hidden rounded-lg">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.0!2d139.35!3d35.36!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z44CSMjU0LTAwODcg56We5aWI5bed55yM5bmz5aOh5biC6LGK55Sw5pys6YO95Lqs77yR77yW77yZ77yV4oiS77yR!5e0!3m2!1sja!2sjp!4v1"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26030.596821697054!2d139.3149754549561!3d35.359998958090095!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019ac7e243467ad%3A0xe908c710724df0cf!2z77yI5qCq77yJ44GP44KL44G-44KL!5e0!3m2!1sja!2sjp!4v1771896286382!5m2!1sja!2sjp"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
