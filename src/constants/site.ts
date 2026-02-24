@@ -3,7 +3,7 @@ export const siteConfig = {
   nameEn: "くるまる",
   description: "神奈川県平塚市を拠点に、自動車の販売・保険・整備まで、お車のことならなんでもご相談ください。",
   url: "https://www.kurumaru-shonan.com",
-  email: "info@example.com",
+  email: "kurumaru0819@gmail.com",
   phone: "0463-31-8825",
   address: "〒254-0087 神奈川県平塚市豊田本郷1695-1",
   founded: "",
