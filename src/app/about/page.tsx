@@ -10,9 +10,11 @@ export const metadata: Metadata = {
   description: `${siteConfig.name}の会社概要ページです。会社情報・所在地・営業時間をご確認いただけます。`,
 };
 
+const address = siteConfig.address.split(" ");
+
 const companyInfo = [
   { label: "会社名", value: siteConfig.name },
-  { label: "所在地", value: siteConfig.address },
+  { label: "所在地", value: null, address: true },
   { label: "TEL", value: siteConfig.phone },
   { label: "営業時間", value: "10:00〜18:00" },
   { label: "定休日", value: "火曜日・第3月曜日" },
@@ -38,7 +40,17 @@ export default function AboutPage() {
                     <dt className="mb-1 w-32 shrink-0 text-sm font-medium text-slate-400 sm:mb-0">
                       {info.label}
                     </dt>
-                    <dd className="text-white">{info.value}</dd>
+                    <dd className="text-white">
+                      {info.address ? (
+                        <>
+                          {address[0]}
+                          <br />
+                          {address[1]}
+                        </>
+                      ) : (
+                        info.value
+                      )}
+                    </dd>
                   </div>
                 ))}
               </dl>
