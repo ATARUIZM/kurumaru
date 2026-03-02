@@ -11,7 +11,7 @@ interface BreadcrumbProps {
 
 export default function Breadcrumb({ items }: BreadcrumbProps) {
   return (
-    <nav className="mb-8 text-sm text-slate-400">
+    <nav className="mb-8 text-sm text-gray-500">
       <ol className="flex items-center gap-2">
         <li>
           <Link href="/" className="transition-colors hover:text-accent">
@@ -20,7 +20,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
         </li>
         {items.map((item, i) => (
           <li key={i} className="flex items-center gap-2">
-            <span className="text-slate-600">/</span>
+            <span className="text-gray-400">/</span>
             {item.href ? (
               <Link
                 href={item.href}
@@ -29,7 +29,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
                 {item.label}
               </Link>
             ) : (
-              <span className="text-slate-300">{item.label}</span>
+              <span className="text-gray-700">{item.label}</span>
             )}
           </li>
         ))}

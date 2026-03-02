@@ -20,10 +20,10 @@ export default function ContactPage() {
           {/* 連絡先 */}
           <AnimatedDiv>
             <Card>
-              <h2 className="mb-6 text-lg font-bold text-white">連絡先</h2>
+              <h2 className="mb-6 text-lg font-bold text-gray-900">連絡先</h2>
               <dl className="divide-y divide-surface-border">
                 <div className="flex flex-col py-4 sm:flex-row sm:items-center">
-                  <dt className="mb-1 w-16 shrink-0 text-sm font-medium text-slate-400 sm:mb-0">Tel</dt>
+                  <dt className="mb-1 w-16 shrink-0 text-sm font-medium text-gray-500 sm:mb-0">Tel</dt>
                   <dd>
                     <a href="tel:0463318825" className="text-accent hover:underline">
                       0463-31-8825
@@ -31,11 +31,11 @@ export default function ContactPage() {
                   </dd>
                 </div>
                 <div className="flex flex-col py-4 sm:flex-row sm:items-center">
-                  <dt className="mb-1 w-16 shrink-0 text-sm font-medium text-slate-400 sm:mb-0">FAX</dt>
-                  <dd className="text-white">0463-36-3273</dd>
+                  <dt className="mb-1 w-16 shrink-0 text-sm font-medium text-gray-500 sm:mb-0">FAX</dt>
+                  <dd className="text-gray-900">0463-36-3273</dd>
                 </div>
                 <div className="flex flex-col py-4 sm:flex-row sm:items-center">
-                  <dt className="mb-1 w-16 shrink-0 text-sm font-medium text-slate-400 sm:mb-0">Mail</dt>
+                  <dt className="mb-1 w-16 shrink-0 text-sm font-medium text-gray-500 sm:mb-0">Mail</dt>
                   <dd>
                     <a href="mailto:kurumaru0819@gmail.com" className="text-accent hover:underline">
                       kurumaru0819@gmail.com
@@ -44,10 +44,10 @@ export default function ContactPage() {
                 </div>
               </dl>
 
-              <div className="mt-6 rounded-lg bg-surface/50 px-4 py-3">
-                <p className="text-sm text-slate-400">
-                  <span className="font-medium text-slate-300">営業時間：</span>10:00〜18:00
-                  　<span className="font-medium text-slate-300">休業日：</span>火曜日・第3月曜日
+              <div className="mt-6 rounded-lg bg-gray-50 px-4 py-3">
+                <p className="text-sm text-gray-500">
+                  <span className="font-medium text-gray-700">営業時間：</span>10:00〜18:00
+                  　<span className="font-medium text-gray-700">休業日：</span>火曜日・第3月曜日
                 </p>
               </div>
             </Card>
@@ -56,13 +56,13 @@ export default function ContactPage() {
           {/* 事故時の連絡先 */}
           <AnimatedDiv delay={0.1}>
             <Card>
-              <h2 className="mb-2 text-lg font-bold text-white">事故時の連絡先</h2>
-              <p className="mb-6 text-sm text-slate-400">
+              <h2 className="mb-2 text-lg font-bold text-gray-900">事故時の連絡先</h2>
+              <p className="mb-6 text-sm text-gray-500">
                 事故が発生した際は、まず安全を確保し、下記の事故受付センターへご連絡ください。
               </p>
               <dl className="divide-y divide-surface-border">
                 <div className="flex flex-col py-4 sm:flex-row sm:items-center">
-                  <dt className="mb-1 shrink-0 text-sm font-medium text-slate-400 sm:mb-0 sm:w-64">
+                  <dt className="mb-1 shrink-0 text-sm font-medium text-gray-500 sm:mb-0 sm:w-64">
                     損保ジャパン 事故受付センター
                   </dt>
                   <dd>
@@ -72,7 +72,7 @@ export default function ContactPage() {
                   </dd>
                 </div>
                 <div className="flex flex-col py-4 sm:flex-row sm:items-center">
-                  <dt className="mb-1 shrink-0 text-sm font-medium text-slate-400 sm:mb-0 sm:w-64">
+                  <dt className="mb-1 shrink-0 text-sm font-medium text-gray-500 sm:mb-0 sm:w-64">
                     AIG損保 事故受付センター
                   </dt>
                   <dd>

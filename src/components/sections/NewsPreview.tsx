@@ -14,12 +14,12 @@ export default async function NewsPreview() {
   });
 
   return (
-    <section className="bg-navy-900/50 py-24">
+    <section className="bg-gray-50 py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionTitle title="お知らせ" subtitle="最新のお知らせ" />
 
         {news.length === 0 ? (
-          <p className="text-center text-slate-400">
+          <p className="text-center text-gray-500">
             お知らせはまだありません。
           </p>
         ) : (
@@ -29,15 +29,15 @@ export default async function NewsPreview() {
                 <Link
                   key={item.id}
                   href={`/news/${item.slug}`}
-                  className="group flex items-start gap-4 py-5 transition-colors hover:bg-surface/30 px-4 -mx-4 rounded-lg"
+                  className="group flex items-start gap-4 py-5 transition-colors hover:bg-white/80 px-4 -mx-4 rounded-lg"
                 >
-                  <time className="shrink-0 text-sm text-slate-500 pt-0.5">
+                  <time className="shrink-0 text-sm text-gray-500 pt-0.5">
                     {formatDate(item.publishedAt || item.createdAt)}
                   </time>
                   <Badge variant="accent">
                     {getCategoryLabel(item.category)}
                   </Badge>
-                  <span className="text-white transition-colors group-hover:text-accent">
+                  <span className="text-gray-900 transition-colors group-hover:text-accent">
                     {item.title}
                   </span>
                 </Link>

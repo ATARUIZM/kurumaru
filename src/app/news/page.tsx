@@ -62,8 +62,8 @@ export default async function NewsPage({
               href={cat.value ? `/news?category=${cat.value}` : "/news"}
               className={`rounded-full px-4 py-2 text-sm transition-colors ${
                 (category || "") === cat.value
-                  ? "bg-accent text-navy-950"
-                  : "border border-surface-border text-slate-400 hover:border-accent hover:text-accent"
+                  ? "bg-accent text-white"
+                  : "border border-surface-border text-gray-500 hover:border-accent hover:text-accent"
               }`}
             >
               {cat.label}
@@ -72,7 +72,7 @@ export default async function NewsPage({
         </div>
 
         {news.length === 0 ? (
-          <p className="text-center text-slate-400 py-12">
+          <p className="text-center text-gray-500 py-12">
             該当するお知らせはありません。
           </p>
         ) : (
@@ -82,15 +82,15 @@ export default async function NewsPage({
                 <Link
                   key={item.id}
                   href={`/news/${item.slug}`}
-                  className="group flex flex-col gap-2 py-6 transition-colors hover:bg-surface/30 px-4 -mx-4 rounded-lg sm:flex-row sm:items-center sm:gap-4"
+                  className="group flex flex-col gap-2 py-6 transition-colors hover:bg-surface/50 px-4 -mx-4 rounded-lg sm:flex-row sm:items-center sm:gap-4"
                 >
-                  <time className="shrink-0 text-sm text-slate-500">
+                  <time className="shrink-0 text-sm text-gray-500">
                     {formatDate(item.publishedAt || item.createdAt)}
                   </time>
                   <Badge variant="accent">
                     {getCategoryLabel(item.category)}
                   </Badge>
-                  <span className="font-medium text-white transition-colors group-hover:text-accent">
+                  <span className="font-medium text-gray-900 transition-colors group-hover:text-accent">
                     {item.title}
                   </span>
                 </Link>

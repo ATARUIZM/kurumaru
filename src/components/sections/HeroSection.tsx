@@ -17,8 +17,8 @@ export default function HeroSection() {
       />
 
       {/* Site color overlay */}
-      <div className="absolute inset-0 bg-navy-950/70" />
-      <div className="absolute inset-0 bg-gradient-to-br from-navy-950/40 via-transparent to-navy-950/60" />
+      <div className="absolute inset-0 bg-black/55" />
+      <div className="absolute inset-0 bg-gradient-to-br from-black/30 via-transparent to-black/40" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -32,7 +32,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            <span className="mb-6 inline-block rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-sm text-accent">
+            <span className="mb-6 inline-block rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-sm text-white">
               神奈川県平塚市の自動車販売店
             </span>
           </motion.div>
@@ -45,14 +45,14 @@ export default function HeroSection() {
           >
             お車のことなら
             <br />
-            <span className="text-accent">くるまる</span>へ
+            <span className="text-accent-light">くるまる</span>へ
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="mb-10 max-w-2xl text-lg text-slate-400 sm:text-xl"
+            className="mb-10 max-w-2xl text-lg text-white/80 sm:text-xl"
           >
             神奈川県平塚市を拠点に、自動車の販売・保険・整備まで、
             お車のことならなんでもお気軽にご相談ください。
@@ -71,7 +71,7 @@ export default function HeroSection() {
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-navy-950 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
     </section>
   );
 }

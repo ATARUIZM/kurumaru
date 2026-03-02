@@ -16,20 +16,20 @@ export default function Textarea({
   return (
     <div>
       {label && (
-        <label htmlFor={id} className="mb-2 block text-sm font-medium text-slate-300">
+        <label htmlFor={id} className="mb-2 block text-sm font-medium text-gray-700">
           {label}
         </label>
       )}
       <textarea
         id={id}
         className={cn(
-          "w-full rounded-lg border border-surface-border bg-navy-900 px-4 py-3 text-white placeholder-slate-500 transition-colors focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent",
+          "w-full rounded-lg border border-surface-border bg-white px-4 py-3 text-gray-900 placeholder-gray-400 transition-colors focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent",
           error && "border-red-500 focus:border-red-500 focus:ring-red-500",
           className
         )}
         {...props}
       />
-      {error && <p className="mt-1 text-sm text-red-400">{error}</p>}
+      {error && <p className="mt-1 text-sm text-red-600">{error}</p>}
     </div>
   );
 }

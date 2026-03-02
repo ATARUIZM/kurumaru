@@ -15,13 +15,13 @@ export default function Header() {
   if (pathname.startsWith("/admin")) return null;
 
   return (
-    <header className="fixed top-0 z-50 w-full border-b border-surface-border/50 bg-navy-950/80 backdrop-blur-xl">
+    <header className="fixed top-0 z-50 w-full border-b border-surface-border bg-white/90 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent">
-            <span className="text-sm font-bold text-navy-950">K</span>
+            <span className="text-sm font-bold text-white">K</span>
           </div>
-          <span className="text-lg font-bold text-white">
+          <span className="text-lg font-bold text-gray-900">
             {siteConfig.nameEn}
           </span>
         </Link>
@@ -35,7 +35,7 @@ export default function Header() {
                 "rounded-lg px-3 py-2 text-sm transition-colors",
                 pathname === item.href
                   ? "text-accent"
-                  : "text-slate-400 hover:text-white"
+                  : "text-gray-500 hover:text-gray-900"
               )}
             >
               {item.label}
@@ -45,7 +45,7 @@ export default function Header() {
 
         <button
           onClick={() => setMobileOpen(true)}
-          className="flex h-10 w-10 items-center justify-center rounded-lg text-slate-400 transition-colors hover:text-white md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-lg text-gray-500 transition-colors hover:text-gray-900 md:hidden"
           aria-label="メニューを開く"
         >
           <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

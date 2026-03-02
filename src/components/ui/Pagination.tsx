@@ -21,7 +21,7 @@ export default function Pagination({
       {currentPage > 1 && (
         <Link
           href={`${basePath}?page=${currentPage - 1}`}
-          className="rounded-lg border border-surface-border px-4 py-2 text-sm text-slate-400 transition-colors hover:border-accent hover:text-accent"
+          className="rounded-lg border border-surface-border px-4 py-2 text-sm text-gray-500 transition-colors hover:border-accent hover:text-accent"
         >
           前へ
         </Link>
@@ -33,8 +33,8 @@ export default function Pagination({
           className={cn(
             "rounded-lg px-4 py-2 text-sm transition-colors",
             page === currentPage
-              ? "bg-accent text-navy-950 font-medium"
-              : "border border-surface-border text-slate-400 hover:border-accent hover:text-accent"
+              ? "bg-accent text-white font-medium"
+              : "border border-surface-border text-gray-500 hover:border-accent hover:text-accent"
           )}
         >
           {page}
@@ -43,7 +43,7 @@ export default function Pagination({
       {currentPage < totalPages && (
         <Link
           href={`${basePath}?page=${currentPage + 1}`}
-          className="rounded-lg border border-surface-border px-4 py-2 text-sm text-slate-400 transition-colors hover:border-accent hover:text-accent"
+          className="rounded-lg border border-surface-border px-4 py-2 text-sm text-gray-500 transition-colors hover:border-accent hover:text-accent"
         >
           次へ
         </Link>

@@ -13,14 +13,14 @@
   --color-navy-900: #12214e;
   --color-navy-950: #0a1632;
 
-  --color-accent: #60a5fa;
-  --color-accent-light: #93c5fd;
-  --color-accent-dark: #2563eb;
-  --color-accent-glow: rgba(96, 165, 250, 0.15);
+  --color-accent: #2563eb;
+  --color-accent-light: #3b82f6;
+  --color-accent-dark: #1d4ed8;
+  --color-accent-glow: rgba(37, 99, 235, 0.12);
 
-  --color-surface: #1e293b;
-  --color-surface-light: #334155;
-  --color-surface-border: #475569;
+  --color-surface: #f8fafc;
+  --color-surface-light: #f1f5f9;
+  --color-surface-border: #e2e8f0;
 
   --font-sans: "Noto Sans JP", "Helvetica Neue", Arial, sans-serif;
   --font-heading: "Noto Sans JP", sans-serif;
@@ -47,8 +47,8 @@
 
 /* Base styles */
 body {
-  background-color: var(--color-navy-950);
-  color: #e2e8f0;
+  background-color: #ffffff;
+  color: #1e293b;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -59,32 +59,32 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-navy-950);
+  background: #f1f5f9;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-navy-600);
+  background: #cbd5e1;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-navy-500);
+  background: #94a3b8;
 }
 
 /* Selection */
 ::selection {
-  background-color: rgba(96, 165, 250, 0.3);
-  color: #ffffff;
+  background-color: rgba(37, 99, 235, 0.15);
+  color: #1e293b;
 }
 
 /* Prose styles for article content */
 .prose-dark {
-  color: #cbd5e1;
+  color: #374151;
   line-height: 1.8;
 }
 .prose-dark h1,
 .prose-dark h2,
 .prose-dark h3,
 .prose-dark h4 {
-  color: #f1f5f9;
+  color: #111827;
   font-weight: 700;
   margin-top: 2em;
   margin-bottom: 0.75em;
@@ -106,7 +106,7 @@ body {
   text-underline-offset: 2px;
 }
 .prose-dark a:hover {
-  color: var(--color-accent-light);
+  color: var(--color-accent-dark);
 }
 .prose-dark ul,
 .prose-dark ol {
@@ -119,12 +119,12 @@ body {
 .prose-dark blockquote {
   border-left: 3px solid var(--color-accent);
   padding-left: 1em;
-  color: #94a3b8;
+  color: #6b7280;
   font-style: italic;
   margin: 1.5em 0;
 }
 .prose-dark pre {
-  background: var(--color-navy-900);
+  background: #f3f4f6;
   border: 1px solid var(--color-surface-border);
   border-radius: 0.5rem;
   padding: 1rem;
@@ -132,10 +132,11 @@ body {
   margin: 1.5em 0;
 }
 .prose-dark code {
-  background: var(--color-navy-900);
+  background: #f3f4f6;
   padding: 0.125em 0.375em;
   border-radius: 0.25rem;
   font-size: 0.875em;
+  color: #1e293b;
 }
 .prose-dark pre code {
   background: none;

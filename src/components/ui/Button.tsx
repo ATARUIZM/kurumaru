@@ -26,10 +26,10 @@ export default function Button({
     "inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent/50";
 
   const variants = {
-    primary: "bg-accent text-navy-950 hover:bg-accent-light shadow-lg shadow-accent/20",
-    secondary: "bg-surface-light text-white hover:bg-surface-border",
+    primary: "bg-accent text-white hover:bg-accent-dark shadow-lg shadow-accent/20",
+    secondary: "bg-surface-light text-gray-700 hover:bg-surface-border",
     outline: "border border-accent text-accent hover:bg-accent/10",
-    ghost: "text-slate-300 hover:text-white hover:bg-surface",
+    ghost: "text-gray-600 hover:text-gray-900 hover:bg-surface",
     danger: "bg-red-600 text-white hover:bg-red-700",
   };
 

@@ -61,10 +61,10 @@ export default function FeaturesSection() {
                 <div className="mb-4 inline-flex rounded-lg bg-accent/10 p-3 text-accent">
                   {feature.icon}
                 </div>
-                <h3 className="mb-3 text-lg font-bold text-white">
+                <h3 className="mb-3 text-lg font-bold text-gray-900">
                   {feature.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-slate-400">
+                <p className="text-sm leading-relaxed text-gray-500">
                   {feature.description}
                 </p>
               </Card>

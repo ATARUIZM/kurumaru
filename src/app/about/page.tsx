@@ -37,10 +37,10 @@ export default function AboutPage() {
                     key={info.label}
                     className="flex flex-col py-4 sm:flex-row sm:items-center"
                   >
-                    <dt className="mb-1 w-32 shrink-0 text-sm font-medium text-slate-400 sm:mb-0">
+                    <dt className="mb-1 w-32 shrink-0 text-sm font-medium text-gray-500 sm:mb-0">
                       {info.label}
                     </dt>
-                    <dd className="text-white">
+                    <dd className="text-gray-900">
                       {info.address ? (
                         <>
                           {address[0]}
@@ -63,7 +63,7 @@ export default function AboutPage() {
           <SectionTitle title="アクセス" />
           <AnimatedDiv className="mx-auto max-w-3xl">
             <Card>
-              <p className="mb-4 text-slate-400">
+              <p className="mb-4 text-gray-500">
                 {address[0]}<br />{address[1]}
               </p>
               <div className="aspect-video w-full overflow-hidden rounded-lg">

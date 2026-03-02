@@ -45,11 +45,11 @@ export default async function NewsDetailPage({ params }: Props) {
               <Badge variant="accent">
                 {getCategoryLabel(news.category)}
               </Badge>
-              <time className="text-sm text-slate-500">
+              <time className="text-sm text-gray-500">
                 {formatDate(news.publishedAt || news.createdAt)}
               </time>
             </div>
-            <h1 className="text-3xl font-bold text-white md:text-4xl">
+            <h1 className="text-3xl font-bold text-gray-900 md:text-4xl">
               {news.title}
             </h1>
           </header>

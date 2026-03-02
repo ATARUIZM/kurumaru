@@ -3,16 +3,15 @@ import Button from "@/components/ui/Button";
 
 export default function CTASection() {
   return (
-    <section className="relative overflow-hidden py-24">
-      <div className="absolute inset-0 bg-gradient-to-r from-accent-dark/20 via-accent/10 to-accent-dark/20" />
-      <div className="absolute inset-0 bg-navy-950/80" />
+    <section className="relative overflow-hidden bg-blue-50 py-24">
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-100/60 via-transparent to-blue-100/60" />
 
       <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
         <AnimatedDiv>
-          <h2 className="mb-6 text-3xl font-bold text-white md:text-4xl">
+          <h2 className="mb-6 text-3xl font-bold text-gray-900 md:text-4xl">
             お車のことなら何でもお気軽にご相談ください
           </h2>
-          <p className="mx-auto mb-10 max-w-2xl text-lg text-slate-400">
+          <p className="mx-auto mb-10 max-w-2xl text-lg text-gray-500">
             平塚市で自動車販売・保険・整備に関するご相談を承っております。
             まずはお気軽にお問い合わせください。
           </p>
