@@ -30,8 +30,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed right-0 top-0 z-50 h-full w-72 border-l border-surface-border p-6"
-            style={{ backgroundColor: "#ffffff" }}
+            className="fixed right-0 top-0 z-50 h-full w-72 border-l border-surface-border bg-white p-6"
           >
             <button
               onClick={onClose}

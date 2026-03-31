@@ -16,9 +16,6 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <div className="mb-4 flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent">
-                <span className="text-sm font-bold text-white">K</span>
-              </div>
               <span className="text-lg font-bold text-gray-900">
                 {siteConfig.nameEn}
               </span>
