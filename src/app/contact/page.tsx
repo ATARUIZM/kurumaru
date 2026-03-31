@@ -47,7 +47,8 @@ export default function ContactPage() {
               <div className="mt-6 rounded-lg bg-gray-50 px-4 py-3">
                 <p className="text-sm text-gray-500">
                   <span className="font-medium text-gray-700">営業時間：</span>10:00〜18:00
-                  　<span className="font-medium text-gray-700">休業日：</span>火曜日・第3月曜日
+                  <br />
+                  <span className="font-medium text-gray-700">休業日：</span>火曜日・第3月曜日
                 </p>
               </div>
             </Card>
