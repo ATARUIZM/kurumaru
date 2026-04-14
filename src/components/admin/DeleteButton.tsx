@@ -31,7 +31,7 @@ export default function DeleteButton({
         </button>
         <button
           onClick={() => setConfirming(false)}
-          className="rounded px-3 py-1 text-sm text-slate-400 transition-colors hover:bg-surface-light"
+          className="rounded px-3 py-1 text-sm text-gray-500 transition-colors hover:bg-gray-100"
         >
           キャンセル
         </button>
@@ -42,7 +42,7 @@ export default function DeleteButton({
   return (
     <button
       onClick={() => setConfirming(true)}
-      className="rounded px-3 py-1 text-sm text-slate-400 transition-colors hover:bg-red-500/10 hover:text-red-400"
+      className="rounded px-3 py-1 text-sm text-gray-500 transition-colors hover:bg-red-50 hover:text-red-600"
     >
       {label}
     </button>

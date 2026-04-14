@@ -23,7 +23,7 @@ export default async function AdminLayout({
       <AdminSidebar />
       <div className="flex flex-1 flex-col pl-64">
         <AdminHeader userName={session.user.name || session.user.email || ""} />
-        <main className="flex-1 p-8">{children}</main>
+        <main className="flex-1 bg-gray-50 p-8">{children}</main>
       </div>
     </div>
   );

@@ -54,8 +54,8 @@ export default async function AdminDashboard() {
   return (
     <div>
       <div className="mb-8">
-        <h1 className="text-2xl font-bold text-white">ダッシュボード</h1>
-        <p className="mt-1 text-sm text-slate-400">サイトの概要</p>
+        <h1 className="text-2xl font-bold text-gray-900">ダッシュボード</h1>
+        <p className="mt-1 text-sm text-gray-500">サイトの概要</p>
       </div>
 
       <div className="mb-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -66,8 +66,8 @@ export default async function AdminDashboard() {
                 {stat.icon}
               </div>
               <div>
-                <p className="text-2xl font-bold text-white">{stat.value}</p>
-                <p className="text-sm text-slate-400">{stat.label}</p>
+                <p className="text-2xl font-bold text-gray-900">{stat.value}</p>
+                <p className="text-sm text-gray-500">{stat.label}</p>
               </div>
             </div>
           </Card>

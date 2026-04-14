@@ -33,7 +33,7 @@ function ToolbarButton({
       className={`rounded px-2 py-1 text-sm transition-colors ${
         active
           ? "bg-accent/20 text-accent"
-          : "text-slate-400 hover:bg-surface-light hover:text-white"
+          : "text-gray-600 hover:bg-gray-200 hover:text-gray-900"
       }`}
     >
       {children}
@@ -99,9 +99,9 @@ export default function RichTextEditor({
   };
 
   return (
-    <div className="overflow-hidden rounded-lg border border-surface-border bg-navy-900">
+    <div className="overflow-hidden rounded-lg border border-surface-border bg-white">
       {/* Toolbar */}
-      <div className="flex flex-wrap gap-1 border-b border-surface-border bg-navy-950 p-2">
+      <div className="flex flex-wrap gap-1 border-b border-surface-border bg-gray-50 p-2">
         <ToolbarButton
           onClick={() => editor.chain().focus().toggleBold().run()}
           active={editor.isActive("bold")}

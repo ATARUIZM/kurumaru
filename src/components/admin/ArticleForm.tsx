@@ -70,7 +70,7 @@ export default function ArticleForm({
             />
 
             <div>
-              <label className="mb-2 block text-sm font-medium text-slate-300">
+              <label className="mb-2 block text-sm font-medium text-gray-700">
                 本文
               </label>
               <RichTextEditor content={content} onChange={setContent} />
@@ -99,7 +99,7 @@ export default function ArticleForm({
             <div>
               <label
                 htmlFor="status"
-                className="mb-2 block text-sm font-medium text-slate-300"
+                className="mb-2 block text-sm font-medium text-gray-700"
               >
                 ステータス
               </label>
@@ -107,7 +107,7 @@ export default function ArticleForm({
                 id="status"
                 name="status"
                 defaultValue={defaultValues.status || "draft"}
-                className="w-full rounded-lg border border-surface-border bg-navy-900 px-4 py-3 text-white focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                className="w-full rounded-lg border border-surface-border bg-white px-4 py-3 text-gray-900 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
               >
                 <option value="draft">下書き</option>
                 <option value="published">公開</option>
@@ -117,7 +117,7 @@ export default function ArticleForm({
             <div>
               <label
                 htmlFor="category"
-                className="mb-2 block text-sm font-medium text-slate-300"
+                className="mb-2 block text-sm font-medium text-gray-700"
               >
                 カテゴリ
               </label>
@@ -128,7 +128,7 @@ export default function ArticleForm({
                   defaultValues.category ||
                   (type === "news" ? "press" : "tech")
                 }
-                className="w-full rounded-lg border border-surface-border bg-navy-900 px-4 py-3 text-white focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                className="w-full rounded-lg border border-surface-border bg-white px-4 py-3 text-gray-900 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
               >
                 {categories.map((cat) => (
                   <option key={cat.value} value={cat.value}>
@@ -150,7 +150,7 @@ export default function ArticleForm({
           </Card>
 
           <Card className="p-6">
-            <label className="mb-2 block text-sm font-medium text-slate-300">
+            <label className="mb-2 block text-sm font-medium text-gray-700">
               サムネイル画像
             </label>
             <ImageUploader

@@ -17,8 +17,8 @@ export default async function AdminNewsPage() {
     <div>
       <div className="mb-8 flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-white">お知らせ管理</h1>
-          <p className="mt-1 text-sm text-slate-400">
+          <h1 className="text-2xl font-bold text-gray-900">お知らせ管理</h1>
+          <p className="mt-1 text-sm text-gray-500">
             {news.length}件の記事
           </p>
         </div>
@@ -27,7 +27,7 @@ export default async function AdminNewsPage() {
 
       {news.length === 0 ? (
         <Card className="py-12 text-center">
-          <p className="text-slate-400">お知らせ記事はまだありません。</p>
+          <p className="text-gray-500">お知らせ記事はまだありません。</p>
           <Button href="/admin/news/new" className="mt-4">
             最初の記事を作成
           </Button>
@@ -36,7 +36,7 @@ export default async function AdminNewsPage() {
         <Card className="overflow-hidden p-0">
           <table className="w-full">
             <thead>
-              <tr className="border-b border-surface-border bg-navy-950/50 text-left text-sm text-slate-400">
+              <tr className="border-b border-surface-border bg-gray-50 text-left text-sm text-gray-500">
                 <th className="px-6 py-3 font-medium">タイトル</th>
                 <th className="px-6 py-3 font-medium">カテゴリ</th>
                 <th className="px-6 py-3 font-medium">ステータス</th>
@@ -48,12 +48,12 @@ export default async function AdminNewsPage() {
               {news.map((item) => (
                 <tr
                   key={item.id}
-                  className="transition-colors hover:bg-surface/30"
+                  className="transition-colors hover:bg-gray-50"
                 >
                   <td className="px-6 py-4">
                     <Link
                       href={`/admin/news/${item.id}/edit`}
-                      className="font-medium text-white hover:text-accent"
+                      className="font-medium text-gray-900 hover:text-accent"
                     >
                       {item.title}
                     </Link>
@@ -72,14 +72,14 @@ export default async function AdminNewsPage() {
                       {getStatusLabel(item.status)}
                     </Badge>
                   </td>
-                  <td className="px-6 py-4 text-sm text-slate-400">
+                  <td className="px-6 py-4 text-sm text-gray-500">
                     {formatDate(item.createdAt)}
                   </td>
                   <td className="px-6 py-4">
                     <div className="flex items-center gap-2">
                       <Link
                         href={`/admin/news/${item.id}/edit`}
-                        className="rounded px-3 py-1 text-sm text-slate-400 transition-colors hover:bg-surface-light hover:text-white"
+                        className="rounded px-3 py-1 text-sm text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-900"
                       >
                         編集
                       </Link>

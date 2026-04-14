@@ -27,13 +27,13 @@ export default function AdminSidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="fixed left-0 top-0 z-40 flex h-screen w-64 flex-col border-r border-surface-border bg-navy-950">
+    <aside className="fixed left-0 top-0 z-40 flex h-screen w-64 flex-col border-r border-surface-border bg-white">
       <div className="flex h-16 items-center border-b border-surface-border px-6">
         <Link href="/admin" className="flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent">
-            <span className="text-sm font-bold text-navy-950">S</span>
+            <span className="text-sm font-bold text-white">S</span>
           </div>
-          <span className="text-sm font-bold text-white">管理画面</span>
+          <span className="text-sm font-bold text-gray-900">管理画面</span>
         </Link>
       </div>
 
@@ -52,7 +52,7 @@ export default function AdminSidebar() {
                 "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm transition-colors",
                 isActive
                   ? "bg-accent/10 text-accent"
-                  : "text-slate-400 hover:bg-surface hover:text-white"
+                  : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
               )}
             >
               {icons[item.icon]}
@@ -65,7 +65,7 @@ export default function AdminSidebar() {
       <div className="border-t border-surface-border p-4">
         <Link
           href="/"
-          className="flex items-center gap-2 text-sm text-slate-400 transition-colors hover:text-white"
+          className="flex items-center gap-2 text-sm text-gray-500 transition-colors hover:text-gray-900"
         >
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
